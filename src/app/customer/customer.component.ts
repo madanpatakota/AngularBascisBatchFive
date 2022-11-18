@@ -20,5 +20,32 @@ import { Component } from "@angular/core";
 })
 
 export class CustomerCompnonent{
+
+
+     text = "This is the my first project";
+
+     customerID = 10;
+
+
+     customerName = "Clerk";
+
+     inputtype = "radio";
+
+
+     getProjectStatus(){
+          return this.text;
+     }
+
+     status = true;
+
+
+     getFired(){
+           console.log("executed....") ; 
+     }
+
+
+     
+
+
 }
 
