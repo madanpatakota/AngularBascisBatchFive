@@ -37,3 +37,76 @@
 
 
 <button (click)="getFired()"  class="btn btn-primary">Click</button>
+
+
+<!-- Ex : I am taking the Input textBox -->
+
+
+
+<br>
+<!-- property databinding -->
+
+
+<!-- -->
+
+
+
+
+<input type="text" (keypress)="showMessage(message)" [value]="customerLocation" #message>
+
+
+<!-- [] -->
+<!-- () -->
+<!-- [()] -->
+
+<!-- ngModel -->
+
+<!-- 1.propertydatabidning
+     2.event databinding
+     3.twoway databinding
+ -->
+
+
+
+<input type="text" 
+[ngModel]="employeeLocation"
+(ngModelChange)="showEmpMessage($event)"
+>
+
+
+
+<br>
+<br>
+
+<input type="text"  [(ngModel)] = employeeRole>
+
+<p>employee role :::::: {{employeeRole}}</p>
+
+
+<hr>
+<hr>
+
+
+<input type="text" 
+style="background-color:yellow">
+
+
+
+
+<input type="text" 
+[ngStyle]="{'background-color': applyRedColor == true ? 'red' : 'yellow'}">
+
+
+<!-- 
+<p style="visibility:visible">Hey i am visisble</p> -->
+
+<p [ngStyle]="{'visibility': isStatus == true ? 'visible' : 'hidden'}">Hey i am visisble</p>
+
+
+
+<p *ngIf= "isStauts1">
+  I am visible based on the if conditons
+</p>
+
+
+

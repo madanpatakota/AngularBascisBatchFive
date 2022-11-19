@@ -44,6 +44,53 @@ export class CustomerCompnonent{
      }
 
 
+
+
+       customerLocation = "New york";
+
+
+
+       showMessage(msg:HTMLInputElement){
+          console.log(msg.value);
+          // console.log("Execuing");
+       }
+
+
+
+
+
+       employeeLocation = "Delhi";
+
+
+
+       showEmpMessage(event:any){
+          console.log(event);
+          // console.log("Execuing");
+       }
+
+
+
+     
+
+       employeeRole = "Admin";
+
+
+
+       applyRedColor = true;
+
+       applyBlueColor = true;
+
+
+
+       isStatus = false;
+
+
+
+
+
+       isStauts1 = false;
+
+
      
 
 
