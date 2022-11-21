@@ -1,0 +1,17 @@
+
+ Q) What kind of directives we are having?
+
+    Attribute directives                 : ngStyle , ngClass         // Here the matter is we are just applying the style.
+                                                                    // that means that we are not removing the element
+                                                                    // from the DOM
+    
+    Structural directives                : ngFor, ngIf, ngSwitch    // Based on the condition we are going to decide wheather we 
+                                                                       are going to add the element or remove the element
+                                                                    // in the Dom..
+
+    //Create own Directives
+    user Defined Directives                                        // wheater ie.. Attribute directive or nonstructal directive
+    |Custom directives
+    | Deverloper defined Directives      : ngSample
+
+

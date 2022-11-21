@@ -110,3 +110,125 @@ style="background-color:yellow">
 
 
 
+
+<!-- canApplyClass -->
+<p class="content">Sample</p>
+
+
+<p [ngClass] = "canApplyClass == true ? 'content' : 'nocontent'" >
+   ngClass Added. </p>
+
+
+
+   <div *ngIf="isDisplay;else help">
+
+     Customer Name  <input type="text" />
+
+   </div>
+
+
+
+   <!-- That means the element should render in the dom whenever i am going to call that
+until and then it should't render. -->
+<ng-template #help>
+   <p>
+      Hi user  sorry . you do't have permission to 
+      see the content.
+   </p>
+</ng-template>
+
+
+
+<!-- 
+
+<ng-template>
+
+
+  <p>Just iam checking......</p>
+
+</ng-template> -->
+
+
+<!-- <ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>  
+  <li>Four</li>  
+  <li>Five</li>  
+</ul> -->
+
+
+<!-- <*ngFor = "let ___ of _____"> -->
+
+<ul>
+  <li *ngFor = "let item of numbers">{{item}}</li>
+</ul>
+
+
+
+
+<ul>
+  <li *ngFor = "let c of customers">{{c}}</li>
+</ul>
+
+
+
+
+{{onlineFoodShopping.Name}}
+{{onlineFoodShopping.location}}
+
+
+
+
+
+
+
+
+
+
+
+<input type="text" 
+[value]="onlineFoodShopping.Name">
+
+
+<ul>
+  <li *ngFor="let food of onlineFoodShoppingList">
+
+    {{food.location}} --- {{food.Name}}
+  </li>
+</ul>
+
+
+
+<div [ngSwitch]="switchName">
+
+  <div *ngSwitchCase="'TV'" >you on the TV Switch</div>
+  <div *ngSwitchCase="'fan'">you on the Fan Switch</div>
+  <div *ngSwitchCase="'internet'">you on the Internet switch</div>
+  <div *ngSwitchCase="'mobile'">you on the Mobile Switch</div>
+  <div *ngSwitchDefault>SWitches are not available.</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>

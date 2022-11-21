@@ -1,3 +1,17 @@
 h1{color:blue}
 
 input{ color : red}
+
+
+.content{
+    font-size : 30px;
+    background-color: yellow;
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nocontent{
+  font-size : 20px;
+}
+
+
